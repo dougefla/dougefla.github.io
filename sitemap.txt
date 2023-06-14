@@ -1,0 +1,10 @@
+http://example.com/categories/index.html
+http://example.com/about/index.html
+http://example.com/2023/06/13/2023-06-13-How-to-cook-Chiffon-Cake/
+http://example.com/tags/index.html
+http://example.com/
+http://example.com/tags/Chiffon-Cake/
+http://example.com/tags/Baking/
+http://example.com/tags/English/
+http://example.com/tags/Japanese/
+http://example.com/categories/Cooking/
