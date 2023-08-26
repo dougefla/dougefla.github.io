@@ -160,6 +160,104 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/26/2023-08-26-Fix-Your_Windows/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Fu Lian">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Douge's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/08/26/2023-08-26-Fix-Your_Windows/" class="post-title-link" itemprop="url">How to Fix Your Windows</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-08-26 23:27:00" itemprop="dateCreated datePublished" datetime="2023-08-26T23:27:00+09:00">2023-08-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-08-27 00:29:40" itemprop="dateModified" datetime="2023-08-27T00:29:40+09:00">2023-08-27</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Tech/" itemprop="url" rel="index"><span itemprop="name">Tech</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>Windows is sooo annoying. Bug everyday. I will record them in case one day.</p>
+<h2 id="Wifi-Connected-and-usable-but-shows-no-internet-and-an-earth-icon"><a href="#Wifi-Connected-and-usable-but-shows-no-internet-and-an-earth-icon" class="headerlink" title="Wifi Connected and usable, but shows no internet and an earth icon."></a>Wifi Connected and usable, but shows no internet and an earth icon.</h2><p>Cite: <a target="_blank" rel="noopener" href="https://answers.microsoft.com/en-us/windows/forum/all/windows-shows-no-internet-access-but-my-internet/2e9b593f-c31c-4448-b5d9-6e6b2bd8560c">https://answers.microsoft.com/en-us/windows/forum/all/windows-shows-no-internet-access-but-my-internet/2e9b593f-c31c-4448-b5d9-6e6b2bd8560c</a></p>
+<pre><code>1. Press Windows + R keys.
+
+2. Type regedit, click OK.
+
+3. Go to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NlaSvc\Parameters\Internet.
+
+4. Make sure following values exist in right pane of Internet:
+
+&quot;ActiveDnsProbeContent&quot;=&quot;8.8.4.4&quot;
+
+&quot;ActiveDnsProbeContentV6&quot;=&quot;2001:4860:4860::8844&quot;
+
+&quot;ActiveDnsProbeHost&quot;=&quot;dns.google&quot;
+
+&quot;ActiveDnsProbeHostV6&quot;=&quot;dns.google&quot;
+
+&quot;ActiveWebProbeHostV6&quot;=&quot;www.msftconnecttest.com&quot;
+
+&quot;EnableActiveProbing&quot;=&quot;1&quot;
+
+5. Restart your Computer or disable/enable your connection and reboot your router.
+``
+</code></pre>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/24/2023-08-24-Save-Your-VPS-From-GFW/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -490,7 +588,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
